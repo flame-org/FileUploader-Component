@@ -1,4 +1,4 @@
 FileUploader-Component
 ======================
 
-Simple Nette addon for uploading files with AJAX [READ-ONLY]
+Simple Nette component for uploading files via AJAX

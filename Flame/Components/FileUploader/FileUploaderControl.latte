@@ -1,0 +1,36 @@
+
+<script type="text/javascript">
+    window.top.window.refreshHandle();
+    function refreshHandle(){
+        $.get({link Refresh!});
+    };
+</script>
+
+<a href="#fileUploader" role="button" class="btn" data-toggle="modal">Show file uploader</a>
+
+<div class="modal hide" id="fileUploader" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">FileUploader</h3>
+    </div>
+    <div class="modal-body">
+	{snippet fileUploader}
+		{if count($uploadedFiles)}
+            <h4>Uploaded files</h4>
+            <ul>
+                <li n:foreach="$uploadedFiles as $file">
+                    <a href="{$basePath}/{$file}" target="_blank">{$file}</a>
+                </li>
+            </ul>
+		{/if}
+
+        <h4>Upload form</h4>
+
+		{control fileUploaderForm}
+
+	{/snippet}
+    </div>
+
+</div>
+
+<iframe id="upload_target" name="upload_target" src="#" style="display: none;"></iframe>

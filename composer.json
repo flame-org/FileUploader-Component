@@ -1,0 +1,23 @@
+{
+	"name": "flame/fileuploader-component",
+	"keywords": ["nette", "simple", "flame", "extension", "component", "files", "fileuploader"],
+	"description": "Simple Nette component for uploading files via AJAX.",
+	"homepage": "https://github.com/flame-org/FileUploader-Component",
+	"license": "BSD-2-Clause-FreeBSD",
+    
+
+    "support":{
+        "email":"flame@jsifalda.name",
+        "issues":"https://github.com/flame-org/FileUploader-Component/issues"
+    },
+    "require":{
+        "php":">=5.3.2",
+        "nette/nette":"*",
+        "flame/framework": "dev-master"
+    },
+    "autoload":{
+        "psr-0":{
+            "Flame":""
+        }
+    }
+}

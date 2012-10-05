@@ -41,4 +41,5 @@ Simple Nette component for uploading files via AJAX
 	}
 
 **Template**
+
 	{control fileUploader}

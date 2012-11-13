@@ -12,8 +12,9 @@
     },
     "require":{
         "php":">=5.3.2",
-        "nette/nette":"*",
-        "flame/framework": "dev-master"
+        "nette/nette":"@dev",
+        "flame/framework": "@dev",
+		"flame/multiplefileupload-control": "@dev"
     },
     "autoload":{
         "psr-0":{

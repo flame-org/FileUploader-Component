@@ -16,7 +16,7 @@ Simple Nette component for uploading files via AJAX
 
 **Presenter**
 
-	...
+```php
 	/**
 	 * @var \Flame\Components\FileUploader\FileUploaderControlFactory $fileUploader
 	 */
@@ -39,6 +39,7 @@ Simple Nette component for uploading files via AJAX
 	{
 		return $this->fileUploader->create();
 	}
+```
 
 **Template**
 

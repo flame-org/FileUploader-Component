@@ -16,6 +16,9 @@ class FileUploaderForm extends \Flame\Application\UI\Form
 	public function configure()
 	{
 
+		if(class_exists('\Kdyby\Extension\Forms\BootstrapRenderer\BootstrapRenderer'))
+			$this->setRenderer(new \Kdyby\Extension\Forms\BootstrapRenderer\BootstrapRenderer());
+
 		$this->addExtension('addMultiUpload', new \Flame\Forms\Controls\MultipleFileUpload());
 
 		$this->getElementPrototype()->target[] = 'upload_target';

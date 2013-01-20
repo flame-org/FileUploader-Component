@@ -10,7 +10,7 @@
 
 namespace Flame\Components\FileUploader;
 
-class FileUploaderControlFactory extends \Flame\Application\ControlFactory
+class FileUploaderControlFactory extends \Nette\Object
 {
 
 	/**
